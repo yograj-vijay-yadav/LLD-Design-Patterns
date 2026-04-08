@@ -28,8 +28,8 @@ class Burger implements FoodItem {
 }
 
 // Decorator interface
-abstract class Decorator implements FoodItem {
-    protected FoodItem foodItem;
+abstract class Decorator implements FoodItem {  //is-a realationship
+    protected FoodItem foodItem;  // has a relationship
 
     public Decorator(FoodItem item) {
         this.foodItem = item;
